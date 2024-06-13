@@ -41,6 +41,7 @@
             <input type="text" class="search" placeholder="Search" id="search" oninput="searchFunction()" />
         </div>
       </header>
+      <div class="results" id="results"  ></div>
       <div class="main">
         <!-- banner-->
         <div class="col12 banner">
@@ -311,35 +312,8 @@
         </ul>
       </footer>
     </div>
-    <script>
+    <script src="script.js" ></script>
 
-     //-------------------------header-search sitede arama yapma------------------------>
-        function searchFunction() {
-            const query = document.getElementById('search').value.toLowerCase();
-            
-            const contentItems = document.querySelectorAll('.content-item');
-        
-            contentItems.forEach(item => {
-              if (item.textContent.toLowerCase().includes(query)) {
-                item.classList.remove('hidden');
-              } else {
-                item.classList.add('hidden');
-              }
-            });
-          }
-
-           
-        //--------------------------------------------------------------------------------->
-      function loadMore() {
-        document.getElementById("none").style.display = "block";
-        document.getElementById("load").style.display = "none";
-        document.getElementById("load1").style.display = "block";
-      }
-      function loadMore1() {
-        document.getElementById("none").style.display = "none";
-        document.getElementById("load").style.display = "block";
-        document.getElementById("load1").style.display = "none";
-      }
-    </script>
+     
   </body>
 </html>
