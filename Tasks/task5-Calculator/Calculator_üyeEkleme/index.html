@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <button onclick="hesapmakinasi()">Basit Hesap Makinası</button>
+        <div id="hesapmakinasi" class="hesap">
+          <label>Hesap Makinası</label><br />
+          <input type="text" id="inputhesap" /><br /><br />
+          <button onclick="hesapla()">Hesapla</button>
+        </div>
+      </div>
+      <div class="item">
+        <h2>Üye Ekle</h2>
+        <form id="uyeForm">
+          <label for="ad">Ad:</label>
+          <input type="text" id="ad" name="ad" required><br><br>
+          <label for="kullanici">Kullanıcı Adı:</label>
+          <input type="text" id="kullanici" name="kullanici" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="cinsiyet">Cinsiyet:</label>
+          <select id="cinsiyet" name="cinsiyet" required>
+            <option value="kadın">Kadın</option>
+            <option value="erkek">Erkek</option>
+          </select><br><br>
+          <button type="submit">Üye Ekle</button>
+        </form>
+      </div>
+      <div class="item">
+        <button class="gelAll">Veri Çek Tümü</button>
+        <table class="datatable">
+          <thead>
+            <tr>
+              <td>#</td>
+              <td>Ad</td>
+              <td>Kullanıcı Adı</td>
+              <td>Email</td>
+              <td>Cinsiyet</td>
+            </tr>
+          </thead>
+          <tbody class="alldata3"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
