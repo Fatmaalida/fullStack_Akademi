@@ -33,7 +33,7 @@ let uyeler = [
 function uyeekle() {
     let alldata3 = document.getElementsByClassName("alldata3")[0];
     
-    // Tablonun içeriğini temizle
+    
     alldata3.innerHTML = "";
 
     for (let i = 0; i < uyeler.length; i++) {
@@ -49,10 +49,10 @@ function uyeekle() {
     }
 }
 
-// "Veri Çek Tümü" butonuna tıklama olayı ekliyoruz
+
 document.querySelector(".gelAll").addEventListener("click", uyeekle);
 
-// Üye ekleme formunu işleme
+
 document.getElementById("uyeForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Formun varsayılan submit davranışını durdur
 
@@ -61,7 +61,7 @@ document.getElementById("uyeForm").addEventListener("submit", function(event) {
     let email = document.getElementById("email").value;
     let cinsiyet = document.getElementById("cinsiyet").value;
 
-    // Yeni üye oluştur
+   
     let yeniUye = {
         ad: ad,
         kullanici: kullanici,
@@ -69,12 +69,12 @@ document.getElementById("uyeForm").addEventListener("submit", function(event) {
         cinsiyet: cinsiyet
     };
 
-    // Yeni üyeyi diziye ekle
+   
     uyeler.push(yeniUye);
 
-    // Formu temizle
+
     document.getElementById("uyeForm").reset();
 
-    // Tablodaki üyeleri güncelle
+   
     uyeekle();
 });
