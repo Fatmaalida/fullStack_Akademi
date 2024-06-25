@@ -8,7 +8,9 @@
 
 .container {
     height: 100vh;
-    background: #36454f;
+    /* background: rgb(131,58,180); */
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 87%, rgba(252,176,69,1) 100%);
+    /* background: #36454f; */
     transform-style: preserve-3d ;
     perspective: 1500px;
     overflow: hidden;
@@ -69,7 +71,7 @@
 }
 
 .navbar li:hover a{
-    color: #d52421;
+    color: #4e21d5;
     letter-spacing: 0px;
 }
 
