@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function plus(){
+            var result = document.getElementById("result").innerHTML;
+            result = parseInt(result);
+            result += 1;
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function minus(){
+            var result = document.getElementById("result").innerHTML;
+            result = parseInt(result);
+            result -= 1;
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function multiply(){
+            var result = document.getElementById("result").innerHTML;
+            result = parseInt(result);
+            result *= 2;
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function reset(){
+            var result = document.getElementById("result").innerHTML;
+            result = parseInt(result);
+            result = 0;
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+
+    <button id="plus" onclick="plus()" >+</button>
+    <button id="minus" onclick="minus()" >-</button>
+    <button id="multiply" onclick="multiply()" >*</button>
+    <button id="reset" onclick="reset()" >reset</button>
+
+    <p id="result">0</p>
+    
+</body>
+</html>

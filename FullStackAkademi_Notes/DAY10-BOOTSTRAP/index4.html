@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- header başlangıç-->
+        <header class="bg-dark text-white p-3">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+              <a href="#" class="navbar-brand">Film Sitesi</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Anasayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Kategoriler</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Diziler</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">İletişim</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <!-- header son-->
+        <div class="carousel slide" data-bs-ride="carousel" id="mainSlider">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://via.placeholder.com/1920x600"
+                class="d-block w-100"
+                alt="Film 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://via.placeholder.com/1920x600"
+                class="d-block w-100"
+                alt="Film 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://via.placeholder.com/1920x600"
+                class="d-block w-100"
+                alt="Film 3"
+              />
+            </div>
+          </div>
+          <button
+            type="button"
+            class="carousel-control-prev"
+            data-bs-target="#mainSlider"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Önceki</span>
+          </button>
+          <button
+            type="button"
+            class="carousel-control-next"
+            data-bs-target="#mainSlider"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sonraki</span>
+          </button>
+        </div>
+        <div class="container my-4">
+          <!--Ödev 2-->
+          <div class="row">
+            <div class="col-lg-4 mb-3">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/300x400"
+                  class="card-img-top"
+                  alt="Film 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Film 1</h5>
+                  <p class="card-text">
+                    lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <button
+                    class="btn btn-primary w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#filmModal"
+                  >
+                    Filmi İzle
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/300x400"
+                  class="card-img-top"
+                  alt="Film 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Film 1</h5>
+                  <p class="card-text">
+                    lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <button
+                    class="btn btn-primary w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#filmModal"
+                  >
+                    Filmi İzle
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/300x400"
+                  class="card-img-top"
+                  alt="Film 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Film 1</h5>
+                  <p class="card-text">
+                    lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <button
+                    class="btn btn-primary w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#filmModal"
+                  >
+                    Filmi İzle
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="my-4">
+            <h3 class="text-center">Film Öner</h3>
+            <form>
+              <div class="mb-3">
+                <label for="filmName" class="form-label">Film Adı</label>
+                <input
+                  type="text"
+                  name="filmName"
+                  id="filmName"
+                  class="form-control"
+                  placeholder="Film Adını Giriniz"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="filmCategory" class="form-label"
+                  >Film Kategorisi</label
+                >
+                <select
+                  class="form-select"
+                  id="filmCategory"
+                  name="filmCategory"
+                >
+                  <option selected>Kategori Seçiniz</option>
+                  <option value="Aksiyon">Aksiyon</option>
+                  <option value="Dram">Dram</option>
+                  <option value="Bilim Kurgu">Bilim Kurgu</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-success w-100">
+                Film Öner
+              </button>
+            </form>
+          </div>
+          <div class="my-4">
+            <h3>Film Fragmanı</h3>
+            <iframe
+              width="100%"
+              height="500"
+              src="https://www.youtube.com/embed/OJIbIutIaB8?si=sWN1VlDXasANZE5O"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div
+            class="modal fade fullscrenn"
+            id="filmModal"
+            tabindex="-1"
+            aria-labelledby="filmModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="filmModalLabel">İnterstaller</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <iframe
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/embed/OJIbIutIaB8?si=sWN1VlDXasANZE5O"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info">
+                    Favorilere Ekle
+                  </button>
+                  <button type="button" class="btn btn-success">
+                    Beğendim
+                  </button>
+                  <button type="button" class="btn btn-danger">
+                    Beğenmedim
+                  </button>
+                  <button class="btn btn-secondary" data-bs-dismiss="modal">
+                    Kapat
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>

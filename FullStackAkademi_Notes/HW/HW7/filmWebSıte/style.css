@@ -1,0 +1,209 @@
+*{
+    margin: 0 ;
+    padding: 0  ;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    height: 100vh;
+    /* background: rgb(131,58,180); */
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 87%, rgba(252,176,69,1) 100%);
+    /* background: #36454f; */
+    transform-style: preserve-3d ;
+    perspective: 1500px;
+    overflow: hidden;
+}
+
+
+.actionbtn {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1111;
+    margin: 2em;
+    font-size: 1.7em;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+
+.actionbtn.active{
+    transform: rotate(720deg);
+
+}
+
+.navbar {
+    /* background: red; */
+    position: absolute;
+    right: 0;
+    width: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.navbar li {
+    list-style: none;
+    transform: translateX(250px);
+}
+
+.navbar.active li {
+    /* list-style: none; */
+    transition: 0.3s calc(var(--delay)*0.4s) ease-out;
+    transform: translateX(0px);
+}
+
+.navbar li a{
+    display: block;
+    color: white;
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 10px;
+    margin: 60px 0;
+    transition: 0.2s ;
+
+}
+
+.navbar li:hover a{
+    color: #4e21d5;
+    letter-spacing: 0px;
+}
+
+/* ------------------banner------------- */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s 0.4s ease-out;
+}
+
+.banner::after,
+.banner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: -1;
+    transform-origin: right;
+    transform: rotate(-0.5deg);
+    transition: 0.5s 0.2s ease;
+
+}
+
+.banner::after {
+    transform: rotate(-1deg);
+    
+}
+
+.banner.active::before{
+    top: -50px;
+    left: -120px;
+    transition: 0.5s 0.6s ease;
+
+
+}
+.banner.active::after{
+    top: -100px;
+    left: -240px;
+    transition: 0.5s 0.6s ease;
+
+
+}
+
+.banner.active {
+    transform-origin: left;
+    transform: rotateY(30deg);
+    transition: 0.3s 0.4s ease-out;
+
+}
+.bgimg{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(bgimg.jpg);
+}
+
+.bgimg::before{
+    content: '';
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    backdrop-filter: blur(7px)brightness(40%) saturate(200%);
+
+}
+
+.textdata {
+    position: relative;
+    max-width: 70%;
+    color: #fff;
+}
+
+
+h2{
+    font-size: 3vw;
+    font-weight: 300;
+    letter-spacing: 7px;
+}
+
+
+h1{
+    font-size: 10vw;
+    /* font-weight: 900; */
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.label {
+    text-align: center;
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+    opacity: 1;
+    transform: translateY(-3vw);
+}
+
+.details {
+    /* text-align: center; */
+    font-size: 1.2vw;
+    font-weight: 300;
+    /* letter-spacing: 1px; */
+    opacity: 0.7;
+    transform: translateY((-2vw));
+}
+
+.btns {
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.btns a{
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2vw;
+    padding: 0.8vw 1.5vw;
+    border: 2px solid #fff;
+    margin: 0 1vw;
+}
+
+.btns a:hover,  #selected{
+    background: #fff;
+    color: black;
+
+}

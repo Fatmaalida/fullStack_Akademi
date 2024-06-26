@@ -1,0 +1,171 @@
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+    <title>Youtube.com</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="background-color: #0f0f0f;">
+    
+    <div class="container-fluid">
+        <!-- navbar -->
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-sm navbar-light">
+                      <div class="container-fluid p-0">
+                        <div class="d-none d-lg-block">
+                            <button style="background: transparent;"
+                            class="yt-menu border-0 rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+                        </button>
+                        </div>
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/image/logo.png" alt="">
+                        </a>
+                       
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <div class="yt-searchbox mx-auto position-relative">
+                                <input
+                                placeholder="Search..."
+                                id="filterText"
+                                class="border-0 bg-transparent text-white" 
+                                type="text"/>
+                                <span onclick="createCard(savedData)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                      </svg>
+                                </span>
+                                <div class="yt-search-dropdown">
+                                    <section class="d-flex align-items-center justify-content-between yt-search-item">
+                                        <p class="m-0"> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                              </svg>
+                                        
+                                           <b> B Coder Netflix</b>
+                                        </p>
+                                        <a href="#">remove</a>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between yt-search-item">
+                                        <p class="m-0"> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                              </svg>
+                                        
+                                           <b>  B Coder bootstrap modification</b>
+                                        </p>
+                                        <a href="#">remove</a>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between yt-search-item">
+                                        <p class="m-0"> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                              </svg>
+                                        
+                                           <b>  B Coder</b>
+                                        </p>
+                                        <a href="#">remove</a>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between yt-search-item">
+                                        <p class="m-0"> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                              </svg>
+                                        
+                                           <b>  B Coder</b>
+                                        </p>
+                                        <a href="#">remove</a>
+                                    </section>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                        <div class="yt-action d-flex align-items-center">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-camera-video d-lg-block d-none" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search d-lg-none d-block" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bell d-lg-block d-none" viewBox="0 0 16 16">
+                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle d-block" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                  </svg>
+                            </span>
+                        </div>      
+
+                  </div>
+                </nav>
+                
+            </div>
+        </div>
+        <!-- navbar-end -->
+        <!-- content -->
+        <div class="row">
+           <section class="col-12 d-flex">
+                <div class="yt-sidebar">
+                    <nav>
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </nav>
+                    <nav>
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Shorts</span>
+                    </nav>
+                    <nav>
+                        <i class="fa-solid fa-users-line"></i>
+                        <span>Subscription</span>
+                    </nav>
+                </div>
+                <div class="yt-video">
+                    <!-- tabs -->
+                    <section class="tabs">
+                        <span class="bg-secondary rounded-3 p-2 m-1 text-white">All</span>
+                        <span class="rounded-3 p-2 m-1 text-white">B Coder</span>
+                        <span class="rounded-3 p-2 m-1 text-white">Programming</span>
+                        <span class="rounded-3 p-2 m-1 text-white">Music</span>
+                        <span class="rounded-3 p-2 m-1 text-white">CSS</span>
+                    </section>
+
+                    <!-- video -->
+                    <div class="row p-2 mt-4 yt-video-container" id="yt-video-container">
+                            <!-- cards -->
+                            <!-- cards -->
+                    </div>
+                    <div class="mt-5"></div>
+                </div>
+           </section>
+        </div>
+        <!-- content -->
+    </div>
+
+    
+
+    <script src="./api.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

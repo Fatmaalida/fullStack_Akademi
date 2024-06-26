@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4 p-3">
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#ornekmodal"
+          >
+            Giriş Yap
+          </button>
+          <button
+            type="button"
+            class="btn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#ornekmodal2"
+          >
+            Kayıt Ol
+          </button>
+          <div class="modal fade" id="ornekmodal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Giriş Yap</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="m-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="m-3">
+                      <label for="password" class="form-label">Şifre</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        name="password"
+                        placeholder="Şifrenizi giriniz"
+                      />
+                    </div>
+                  </form>
+                  <hr />
+                  <a href="#" class="btn btn-warning btn-sm">Şifremi Unuttum</a>
+                  <a href="#" class="btn btn-primary btn-sm">Kayıt Ol</a>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-success">
+                    Giriş Yap
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal"
+                  >
+                    Kapat
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="ornekmodal2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Kayıt Ol</h4>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  >
+                    <i class="bi bi-x-lg"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="m-3">
+                      <label for="name" class="form-label">Adınız</label>
+                      <input
+                        tpye="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Adınızı giriniz"
+                      />
+                    </div>
+                    <div class="m-3">
+                      <label for="surname" class="form-label">Soyadınız</label>
+                      <input
+                        type="text"
+                        name="surname"
+                        id="surname"
+                        class="form-control"
+                        placeholder="Soyadınızı giriniz"
+                      />
+                    </div>
+                    <div class="m-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Email adresinizi giriniz"
+                      />
+                    </div>
+                    <div class="m-3">
+                      <label for="phone" class="form-label">Telefon</label>
+                      <input
+                        type="phone"
+                        class="form-control"
+                        name="phone"
+                        id="phone"
+                        placeholder="Telefon numaranızı giriniz"
+                      />
+                    </div>
+                    <div class="m-3">
+                      <label for="password" class="form-label">Şifre</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        name="password"
+                        id="password"
+                        placeholder="Şifrenizi giriniz"
+                      />
+                    </div>
+                    <div class="m-3">
+                      <label for="repassword" class="form-label"
+                        >Şifre Tekrar</label
+                      >
+                      <input
+                        tpye="password"
+                        name="repassword"
+                        id="repassword"
+                        class="form-control"
+                        placeholder="Şifrenizi tekrar giriniz"
+                      />
+                    </div>
+                    <a href="#" class="btn btn-warning btn-sm"
+                      >Şifremi Unuttum</a
+                    >
+                    <a href="#" class="btn btn-primary btn-sm">Giriş Yap</a>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success">
+                    Kayıt Ol
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal"
+                  >
+                    Kapat
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
+
+<!-- toggler yönetici  -->
+<!-- expanded açık gelip gelmemesi false -->
+
+<!-- option selected lerde name olmak zorunda -->
+
+<!-- tabindex z index gibidir fakat sadece modallarda kullanılır -->
+

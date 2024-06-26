@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function hesapla() {
+        var number1 = document.getElementById("number1").value;
+        var number2 = document.getElementById("number2").value;
+        var islem = document.getElementById("islem").value;
+        /*  if (islem == 1) {
+          alert(Number(number1) + Number(number2));
+        } else if (islem == 2) {
+          alert(Number(number1) - Number(number2));
+        } else if (islem == 3) {
+          alert(Number(number1) * Number(number2));
+        } else if (islem == 4) {
+          alert(Number(number1) / Number(number2));
+        }
+          */
+        switch (islem) {
+          case "1":
+            alert(Number(number1) + Number(number2));
+            break;
+          case "2":
+            alert(Number(number1) - Number(number2));
+            break;
+          case "3":
+            alert(Number(number1) * Number(number2));
+            break;
+          case "4":
+            alert(Number(number1) / Number(number2));
+            break;
+          default:
+            alert("Hatalı işlem");
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <label for="number1">1.Sayıyı Giriniz</label><br /><br />
+      <input type="text" id="number1" /><br /><br />
+      <label for="number2">2.Sayıyı Giriniz</label><br /><br />
+      <input type="text" id="number2" /><br /><br />
+      <select id="islem">
+        <option value="1">Toplama</option>
+        <option value="2">Çıkarma</option>
+        <option value="3">Çarpma</option>
+        <option value="4">Bölme</option>
+      </select>
+      <br /><br />
+      <button onclick="hesapla()">Hesapla</button><br /><br />
+    </div>
+  </body>
+</html>

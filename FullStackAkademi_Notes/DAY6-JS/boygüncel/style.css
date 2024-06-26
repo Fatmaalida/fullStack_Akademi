@@ -1,0 +1,29 @@
+.container {
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+    background-color: #dd9a9f;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  #h2 {
+    text-align: center;
+  }
+  #h1 {
+    text-align: center;
+  }

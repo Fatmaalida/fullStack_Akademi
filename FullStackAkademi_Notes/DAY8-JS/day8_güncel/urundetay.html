@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta etiketleri sayfanın karakter seti ve cihaz uyumluluğu için -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Harici CSS dosyasını bağlama -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- İç stil (internal CSS) örneği -->
+    <style>
+      .main {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sayfa içeriğini saran ana konteyner -->
+    <div class="container">
+      <!-- Başlık kısmı -->
+      <header class="header">
+        <!-- 2 sütunlu bölüm -->
+        <div class="col2">
+          <!-- Anasayfa bağlantısı içeren logo -->
+          <a href="index.html">
+            <img src="logo.png" alt="logo" class="logo" />
+          </a>
+        </div>
+        <!-- 10 sütunlu bölüm -->
+        <div class="col10">
+          <!-- Menü bağlantıları -->
+          <nav class="nav">
+            <!-- Her bağlantı bir öğe içinde -->
+            <div class="nav__item">
+              <a href="index.html" class="nav__link">Anasayfa</a>
+            </div>
+            <div class="nav__item">
+              <a href="urundetay.html" class="nav__link">Ürün Detay</a>
+            </div>
+            <div class="nav__item">
+              <a href="sepet.html" class="nav__link">Sepet</a>
+            </div>
+            <div class="nav__item">
+              <a href="hakkimizda.html" class="nav__link">Hakkımızda</a>
+            </div>
+            <div class="nav__item">
+              <a href="iletisim.html" class="nav__link">İletişim</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Ana içerik alanı -->
+      <div class="main">
+        <!-- 6 sütunlu bölüm (ürün resmi için) -->
+        <div class="col6">
+          <img
+            src="https://picsum.photos/200/200"
+            alt="Cep Telefonu"
+            class="product_img"
+          />
+        </div>
+        <!-- 6 sütunlu bölüm (ürün detayları için) -->
+        <div class="col6">
+          <h2 class="product_title">Ürün Adı</h2>
+          <p class="short_desc">
+            <!-- Kısa ürün açıklaması -->
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+            fugiat aut minima dolorum soluta neque enim laboriosam debitis quam,
+            sit magni praesentium facere expedita, doloremque sint eveniet
+            architecto mollitia atque!
+          </p>
+          <!-- Ürün fiyatı -->
+          <p class="product_price">100 ₺</p>
+          <!-- Ürün adedi için sayı girişi -->
+          <input type="number" class="product_count" value="1" />
+          <!-- Sepete ekle butonu -->
+          <button class="add_to_cart">Sepete Ekle</button>
+          <!-- Paylaş butonu -->
+          <button class="share">Paylaş</button>
+        </div>
+      </div>
+      <!-- 12 sütunlu bölüm (tam genişlikte ürün açıklaması için) -->
+      <div class="col12">
+        <h2 class="product_title">Ürün Açıklaması</h2>
+        <p class="desc">
+          <!-- Uzun ürün açıklaması -->
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nisi
+          perspiciatis asperiores officia placeat corrupti, eligendi ullam
+          explicabo error eveniet mollitia alias veniam hic consectetur
+          perferendis nobis dolore blanditiis architecto.<br />
+          <!-- Aynı şekilde devam eden paragraflar -->
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nisi
+          perspiciatis asperiores officia placeat corrupti, eligendi ullam
+          explicabo error eveniet mollitia alias veniam hic consectetur
+          perferendis nobis dolore blanditiis architecto.<br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nisi
+          perspiciatis asperiores officia placeat corrupti, eligendi ullam
+          explicabo error eveniet mollitia alias veniam hic consectetur
+          perferendis nobis dolore blanditiis architecto.<br />
+        </p>
+      </div>
+      <!-- Altbilgi kısmı -->
+      <footer class="footer">
+        <!-- 4 sütunlu bölüm -->
+        <div class="col4">
+          <!-- Anasayfa bağlantısı içeren logo -->
+          <a href="index.html" class="footer_logo_link">
+            <img src="logo.png" alt="logo" class="footer_logo" />
+          </a>
+        </div>
+        <!-- 8 sütunlu bölüm -->
+        <div class="col8">
+          <!-- Alt menü bağlantıları -->
+          <div class="footer_nav">
+            <!-- Her bağlantı bir öğe içinde -->
+            <div class="footer_nav_item">
+              <div class="footer_nav_title">
+                <a href="index.html" class="footer_nav_link">Anasayfa</a>
+              </div>
+              <div class="footer_nav_title">
+                <a href="urundetay.html" class="footer_nav_link">Ürün Detay</a>
+              </div>
+              <div class="footer_nav_title">
+                <a href="sepet.html" class="footer_nav_link">Sepet</a>
+              </div>
+              <div class="footer_nav_title">
+                <a href="hakkimizda.html" class="footer_nav_link">Hakkımızda</a>
+              </div>
+              <div class="footer_nav_title">
+                <a href="iletisim.html" class="footer_nav_link">İletişim</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Harici JavaScript dosyasını bağlama -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+header {
+    background-color: bisquite;
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+
+
+}
+
+/* justiyy content div padding
+align center h2 a ları alır */
+
+nav{
+    background-color: rgb(193, 203, 208);
+    padding: 10px;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+}
+
+nav a:hover{
+ background-color: rgb(140, 134, 166);
+}
+
+nav a:active {
+    background-color: rgb(94, 11, 171);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+section{
+    padding: 20px;
+}
+
+.col3{
+    width: 20%;
+    float: left;
+}
+
+.col3 h2{
+    background-color: rgb(188, 188, 188);
+    padding: 10px;
+    text-align: center;
+}
+
+.col3 ul{
+    list-style-type: none;
+    padding: 0;
+
+
+}
+.col3 ul li{
+   padding: 10px;
+
+
+}
+.col3 ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
+
+
+.col3 ul li a:hover{
+    background-color: aliceblue;
+
+}
+
+.col9{
+    width: 80%;
+    float: left;
+}
+
+.col4{
+    width: 33.33%;
+    float: left;
+}
+
+.card{
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 10px;
+}
+
+.card img{
+    width: 100%;
+   
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.card p{
+    text-align: center;
+}
+
+.btn {
+    background: rgb(2,0,36);
+    background:linear-gradient(
+        90deg,
+        rgba(2,0,36, 1) 0%,
+        rgba(9, 9, 121, 1)35%,
+        rgba(0, 212, 255, 1) 100%);
+
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+}
+
+
+.blog{
+    background-color: white;
+    padding: 20px;
+    margin:10px;
+}
+
+footer {
+    background-color: bisque;
+    margin: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

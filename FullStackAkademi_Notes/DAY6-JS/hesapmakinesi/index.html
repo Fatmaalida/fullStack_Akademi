@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <button onclick="hesapmakinasi()">Basit Hesap Makinası</button>
+        <div id="hesapmakinasi" class="hesap">
+          <label>Hesap Makinası</label><br />
+          <input type="text" id="inputhesap" /><br /><br />
+          <button onclick="hesapla()">Hesapla</button>
+        </div>
+      </div>
+      <div class="item">
+        <button onclick="uyeekle()">Üye Ekle</button>
+        <ul id="uyeler" class="uyeler"></ul>
+      </div>
+      <div class="item">
+        <button class="btn">Tıklayınız</button>
+        <b>Hava Çok Sıcak</b>
+      </div>
+      <div class="item">
+        <input type="text" class="display" />
+        <div class="btn-group">
+          <button class="button">1</button>
+          <button class="button">2</button>
+          <button class="button">3</button>
+          <button class="button">/</button>
+          <br />
+          <button class="button">4</button>
+          <button class="button">5</button>
+          <button class="button">6</button>
+          <button class="button">*</button>
+          <br />
+          <button class="button">7</button>
+          <button class="button">8</button>
+          <button class="button">9</button>
+          <button class="button">-</button>
+          <br />
+          <button class="button">C</button>
+          <button class="button">0</button>
+          <button class="button">=</button>
+          <button class="button">+</button>
+          <br />
+          <button class="button">00</button>
+          <button class="button">.</button>
+          <button class="button">(</button>
+          <button class="button">)</button>
+        </div>
+      </div>
+      <div class="item">
+        <button class="btn-basla">Başla</button>
+        <h1 class="yaz1"></h1>
+      </div>
+      <div class="item">
+        <button class="btn-basla2">Başla</button>
+        <h1 class="yaz2"></h1>
+      </div>
+      <div class="item">
+        <button class="gelAll">Veri Çek Tümü</button>
+        <table class="datatable">
+          <thead>
+            <tr>
+              <td>#</td>
+              <td>Başlık</td>
+              <td>Kullanıcı Adı</td>
+              <td>Email</td>
+              <td>Cinsiyet</td>
+            </tr>
+          </thead>
+          <tbody class="alldata"></tbody>
+        </table>
+      </div>
+      <div class="item">
+        <button onclick="fetchdata()">Veri Çek Tümü</button>
+        <table class="datatable">
+          <thead>
+            <tr>
+              <td>#</td>
+              <td>Başlık</td>
+              <td>Açıklama</td>
+            </tr>
+          </thead>
+          <tbody class="alldata2"></tbody>
+        </table>
+      </div>
+      <div class="item">
+        <button onclick="fetchuserdata()">Veri Çek Tümü</button>
+        <div class="content"></div>
+        <table class="datatable">
+          <thead>
+            <tr>
+              <td>#</td>
+              <td>İsim</td>
+              <td>Kullanıcı Adı</td>
+              <td>Email</td>
+            </tr>
+          </thead>
+          <tbody class="alldata3"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

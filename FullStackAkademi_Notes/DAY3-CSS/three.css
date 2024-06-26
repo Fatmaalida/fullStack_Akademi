@@ -1,0 +1,14 @@
+.right
+{
+    float: right;
+    width: 50%;
+    color: aliceblue;
+    background-color: red;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    color: aliceblue;
+    background-color: blue;
+}

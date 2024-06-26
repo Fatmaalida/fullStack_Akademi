@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(212, 124, 139);
+    justify-content: space-evenly;
+    display: flex;
+    
+}
+
+.menu ul{
+    list-style: none;
+
+}
+
+
+
+.section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    height: 380px;
+    width: 380px;
+    
+}
+.boxx{
+    height: 380px;
+    width: 380px;
+}
+
+
+.section-1 , .section-2 {
+    background-color: royalblue;
+}
+.section-3 , .section-4 {
+    background-color: rgb(140, 225, 65);
+}
+.section-5 , .section-6 {
+    background-color: rgb(225, 65, 65);
+}
+.section-7 , .section-8 {
+    background-color: rgb(225, 188, 65);
+}
+.section-9, .section-10 {
+    background-color: rgb(145, 65, 225);
+}
+.section-11 , .section-66 {
+    background-color: rgb(139, 62, 113);
+}
+.section-22 , .section-77 {
+    background-color: rgb(247, 8, 8);
+}
+.section-33 , .section-88 {
+    background-color: rgb(23, 4, 43);
+}
+.section-44 , .section-99 {
+    background-color: rgb(27, 24, 12);
+}
+.section-55 , .section-100 {
+    background-color: rgb(65, 225, 188);
+}

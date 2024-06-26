@@ -1,0 +1,56 @@
+ul> li {
+    display: inline;
+    margin-right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    list-style: none;
+
+}
+
+div > p {
+    display: inline;
+    margin-right: 10px;
+    background-color: brown;
+    color: white;
+    padding: 5px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+} 
+
+.boxs1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxs2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+
+.boxs3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.boxs3 > .box {
+    height: 50px !important;
+}

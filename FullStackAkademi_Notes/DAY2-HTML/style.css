@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  header{
+    background-color: #908484;
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+  }
+  p{
+    color: #132743;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right:  1rem;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(56, 53, 53);
+  }
+
+
+  main {
+    padding: 1rem;
+    text-align: center;
+    min-height: 90vh;
+    display: flex;
+  }
+
+  section{
+    flex: 1;
+    background-color: #ebe5e5;
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .kare{
+    background-color: #f7b9b9;
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+    margin-left: 80px;
+  }
+
+  .üçgen{
+   
+    width: 0; 
+    height: 0; 
+    border-bottom: 110px solid #b965a2; 
+    border-left: 60px solid transparent; 
+    border-right: 60px solid transparent;
+    margin-left: 80px;
+
+  
+  }
+
+    .dikdortgen {
+        position: center;
+        width: 200px;
+        height: 100px;
+        background-color: #8364e1;
+        margin-left: 50px;
+    }
+    
+  
+  
+  .daire{
+    position: center;
+    background-color: #407088;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 80px;
+  }
+
+  .packman{
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #132743;
+    border-left: 60px solid #132743;
+    border-bottom: 60px solid #132743;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin-left: 20px;
+
+  }
+
+  footer{
+    background-color: #8fa49d;
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+ 
+
+
+
+  h1{
+    color: rgb(70, 68, 68);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+  }
+
+  h2{
+    color: rgb(81, 78, 78);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+
+  }

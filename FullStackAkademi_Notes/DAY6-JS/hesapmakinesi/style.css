@@ -1,0 +1,42 @@
+.container {
+    text-align: center;
+    padding-top: 100px;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container .item {
+    background-color: rgb(186, 124, 174);
+    border-radius: 10px;
+    border:1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 400px;
+}
+
+.hesap{
+    margin-top: 25px;
+}
+
+.item ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.button {
+    width: 37px;
+    margin: 3px;
+}
+
+.datatable{
+    width: 100%;
+    margin-top: 10px;
+    border-spacing: 0px;
+}
+
+.datatable thead tr td,
+.datatable thead tr td{
+    border: 1px solid black;
+    padding: 5px;
+}

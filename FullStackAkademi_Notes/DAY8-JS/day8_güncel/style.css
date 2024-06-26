@@ -1,0 +1,463 @@
+/* Genel sayfa düzeni için temel CSS */
+body {
+    font-family: Arial, sans-serif;
+    /* Tüm sayfa için yazı tipi ayarı */
+    margin: 0;
+    /* Sayfa kenar boşlukları sıfır yapıldı */
+    padding: 0;
+    /* Sayfa içeriği boşlukları sıfır yapıldı */
+    box-sizing: border-box;
+    /* Kutu modeli: içerik kutusunun genişlik ve yüksekliği iç sınıra dahil edildi */
+}
+
+/* Ana içerik alanı genişliği ayarlandı */
+.container {
+    width: 100%;
+    /* Genişlik %100 */
+    max-width: 100%;
+    /* Maksimum genişlik %100 */
+    margin: 0 auto;
+    /* Merkezde hizalama */
+    margin-bottom: 200px;
+    /* Alt kısımdan 200 piksel boşluk bırakıldı */
+}
+
+/* Başlık ve footer stil ayarları */
+.header,
+.footer {
+    display: flex;
+    /* Flexbox kullanıldı */
+    align-items: center;
+    /* Öğeleri dikeyde hizalar */
+    justify-content: space-between;
+    /* Öğeleri yatayda hizalar */
+    background-color: lightsalmon;
+    /* Arkaplan rengi */
+    color: #fff;
+    /* Yazı rengi */
+    padding: 10px 20px;
+    /* İç boşluk ayarlandı */
+}
+
+/* Footer sabit pozisyonlandırma */
+.footer {
+    position: fixed;
+    /* Sabit pozisyon */
+    bottom: 0;
+    /* Alt kenardan 0 uzaklıkta */
+    width: 100%;
+    /* Genişlik %100 */
+}
+
+/* Menü navigasyon öğeleri için stil ayarları */
+.header .nav,
+.footer_nav {
+    display: flex;
+    /* Flexbox kullanıldı */
+}
+
+/* Menü öğe ve bağlantıları için stil ayarları */
+.header .nav__item,
+.footer_nav_item {
+    margin: 0 10px;
+    /* Öğe kenar boşlukları ayarlandı */
+}
+
+.header .nav__link,
+.footer_nav_link {
+    color: #fff;
+    /* Yazı rengi */
+    text-decoration: none;
+    /* Alt çizgi kaldırıldı */
+}
+
+.header .logo,
+.footer_logo {
+    max-width: 100px;
+    /* Maksimum genişlik */
+}
+
+/* Banner (reklam alanı) stil ayarları */
+.banner {
+    margin: 20px 0;
+    /* Dış boşluk ayarlandı */
+    width: 100%;
+    /* Genişlik %100 */
+}
+
+.banner_img {
+    width: 100%;
+    /* Genişlik %100 */
+    height: auto;
+    /* Yükseklik otomatik */
+}
+
+/* Ana içerik alanı için stil ayarları */
+.main {
+    display: flex;
+    /* Flexbox kullanıldı */
+    flex-wrap: wrap;
+    /* Öğeleri satır atlatma */
+    padding: 20px;
+    /* İç boşluk ayarlandı */
+}
+
+/* Sütun genişlikleri için flex ayarları */
+.col2,
+.col3,
+.col4,
+.col6,
+.col8,
+.col10,
+.col12 {
+    padding: 10px;
+    /* İç boşluk ayarlandı */
+    box-sizing: border-box;
+    /* Kutu modeli */
+}
+
+.col2 {
+    flex: 0 0 16.66%;
+    /* Flex özellikleri */
+}
+
+.col3 {
+    flex: 0 0 25%;
+    /* Flex özellikleri */
+}
+
+.col4 {
+    flex: 0 0 33.33%;
+    /* Flex özellikleri */
+}
+
+.col6 {
+    flex: 0 0 50%;
+    /* Flex özellikleri */
+}
+
+.col8 {
+    flex: 0 0 66.66%;
+    /* Flex özellikleri */
+}
+
+.col10 {
+    flex: 0 0 83.33%;
+    /* Flex özellikleri */
+}
+
+.col12 {
+    flex: 0 0 100%;
+    /* Flex özellikleri */
+}
+
+/* Ürün ve blog görselleri için stil ayarları */
+.product_img,
+.blog_img {
+    width: 100%;
+    /* Genişlik %100 */
+    height: auto;
+    /* Yükseklik otomatik */
+}
+
+/* Ürün ve blog başlıkları için stil ayarları */
+.product_title,
+.blog_title {
+    font-size: 1.2em;
+    /* Yazı boyutu */
+    margin: 10px 0;
+    /* Dış boşluk ayarlandı */
+}
+
+/* Kısa açıklama, blog açıklama ve ürün fiyatları için stil ayarları */
+.short_desc,
+.blog_desc,
+.product_price {
+    font-size: 0.9em;
+    /* Yazı boyutu */
+    color: #666;
+    /* Yazı rengi */
+}
+
+/* Ürün fiyatları için özel stil ayarları */
+.product_price {
+    font-size: 1.1em;
+    /* Yazı boyutu */
+    color: #000;
+    /* Yazı rengi */
+    margin: 10px 0;
+    /* Dış boşluk ayarlandı */
+}
+
+/* Sepete ekle butonu için stil ayarları */
+.add_to_cart {
+    padding: 10px 20px;
+    /* İç boşluk ayarlandı */
+    background-color: #333;
+    /* Arkaplan rengi */
+    color: #fff;
+    /* Yazı rengi */
+    border: none;
+    /* Kenarlık yok */
+    cursor: pointer;
+    /* İmleç tipi */
+}
+
+.add_to_cart:hover {
+    background-color: #555;
+    /* Üzerine gelindiğinde arkaplan rengi */
+}
+
+/* Footer navigasyon başlığı için stil ayarları */
+.footer_nav_title {
+    margin: 5px 0;
+    /* Dış boşluk ayarlandı */
+}
+
+/* Kurumsal görsel için stil ayarları */
+.corporate_img {
+    margin: 20px 0;
+    /* Dış boşluk ayarlandı */
+    width: 100%;
+    /* Genişlik %100 */
+}
+
+.corporate_img_tag {
+    width: 100%;
+    /* Genişlik %100 */
+    height: auto;
+    /* Yükseklik otomatik */
+}
+
+/* Misyon, vizyon ve kurumsal içerik için stil ayarları */
+.mission,
+.vission,
+.corporate_content {
+    margin: 20px 0;
+    /* Dış boşluk ayarlandı */
+}
+
+/* Misyon başlığı, vizyon başlığı ve kurumsal başlık için stil ayarları */
+.misson_title,
+.vission_title,
+.cortorate_title {
+    font-size: 1.5em;
+    /* Yazı boyutu */
+    margin-bottom: 10px;
+    /* Alt boşluk ayarlandı */
+}
+
+/* Misyon içerik, vizyon içerik ve kurumsal açıklama için stil ayarları */
+.mission_content,
+.vission_content,
+.corporte_desc {
+    font-size: 1em;
+    /* Yazı boyutu */
+    color: #333;
+    /* Yazı rengi */
+}
+
+/* Adres bilgisi için stil ayarları */
+.address {
+    margin: 20px 0;
+    /* Dış boşluk ayarlandı */
+}
+
+/* Adres başlığı için stil ayarları */
+.address_title {
+    font-size: 1.5em;
+    /* Yazı boyutu */
+    margin-bottom: 10px;
+    /* Alt boşluk ayarlandı */
+}
+
+/* Adres içeriği ve telefon numarası için stil ayarları */
+.address_address,
+.address_phone {
+    font-size: 1em;
+    /* Yazı boyutu */
+    color: #333;
+    /* Yazı rengi */
+}
+
+/* Form alanı için stil ayarları */
+.form {
+    margin: 20px 0;
+    /* Dış boşluk ayarlandı */
+}
+
+/* Form başlığı için stil ayarları */
+.form_title {
+    font-size: 1.5em;
+    /* Yazı boyutu */
+    margin-bottom: 10px;
+    /* Alt boşluk ayarlandı */
+    float: right;
+    /* Sağa yasla */
+}
+
+/* Form giriş alanları için stil ayarları */
+.form input,
+.form textarea {
+    width: 100%;
+    /* Genişlik %100 */
+    padding: 10px;
+    /* İç boşluk ayarlandı */
+    margin: 10px 0;
+    /* Dış boşluk ayarlandı */
+    border: 1px solid #ccc;
+    /* Kenarlık ayarlandı */
+    border-radius: 5px;
+    /* Köşe yuvarlama */
+    font-size: 1em;
+    /* Yazı boyutu */
+}
+
+/* Form metin alanı için özel stil ayarları */
+.form textarea {
+    resize: vertical;
+    /* Dikey boyutlandırmaya izin ver */
+    height: 150px;
+    /* Yükseklik ayarlandı */
+}
+
+/* Form gönder butonu için stil ayarları */
+.btn-submit {
+    padding: 10px 20px;
+    /* İç boşluk ayarlandı */
+    background-color: #333;
+    /* Arkaplan rengi */
+    color: #fff;
+    /* Yazı rengi */
+    border: none;
+    /* Kenarlık yok */
+    cursor: pointer;
+    /* İmleç tipi */
+    font-size: 1em;
+    /* Yazı boyutu */
+    border-radius: 5px;
+    /* Köşe yuvarlama */
+}
+
+.btn-submit:hover {
+    background-color: #555;
+    /* Üzerine gelindiğinde arkaplan rengi */
+}
+
+/* iframe (gömülü içerik) için stil ayarları */
+iframe {
+    margin-top: 20px;
+    /* Üst boşluk ayarlandı */
+}
+
+/* Ürün görselleri için stil ayarları */
+.product_img {
+    width: 100%;
+    /* Genişlik %100 */
+    height: auto;
+    /* Yükseklik otomatik */
+}
+
+/* Ürün başlığı için stil ayarları */
+.product_title {
+    font-size: 1.5em;
+    /* Yazı boyutu */
+    margin-bottom: 10px;
+    /* Alt boşluk ayarlandı */
+}
+
+/* Kısa açıklama ve ürün fiyatı için stil ayarları */
+.short_desc,
+.product_price {
+    font-size: 1em;
+    /* Yazı boyutu */
+    margin-bottom: 10px;
+    /* Alt boşluk ayarlandı */
+}
+
+/* Ürün adedi için stil ayarları */
+.product_count {
+    width: 60px;
+    /* Genişlik 60 piksel */
+    padding: 5px;
+    /* İç boşluk ayarlandı */
+    margin-right: 10px;
+    /* Sağ boşluk ayarlandı */
+}
+
+/* Sepete ekle ve paylaş butonları için stil ayarları */
+.add_to_cart,
+.share {
+    padding: 10px 20px;
+    /* İç boşluk ayarlandı */
+    background-color: #333;
+    /* Arkaplan rengi */
+    color: #fff;
+    /* Yazı rengi */
+    border: none;
+    /* Kenarlık yok */
+    cursor: pointer;
+    /* İmleç tipi */
+    margin-right: 10px;
+    /* Sağ boşluk ayarlandı */
+    border-radius: 5px;
+    /* Köşe yuvarlama */
+}
+
+.add_to_cart:hover,
+.share:hover {
+    background-color: #555;
+    /* Üzerine gelindiğinde arkaplan rengi */
+}
+
+/* Açıklama alanı için stil ayarları */
+.desc {
+    margin: 20px 0;
+    /* Dış boşluk ayarlandı */
+}
+
+/* Tablo için stil ayarları */
+.table {
+    width: 100%;
+    /* Genişlik %100 */
+    border-collapse: collapse;
+    /* Kenar çizgileri kaldır */
+    margin-bottom: 20px;
+    /* Alt boşluk ayarlandı */
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    /* İç boşluk ayarlandı */
+    text-align: left;
+    /* Metin hizalaması */
+    border-bottom: 1px solid #ddd;
+    /* Alt kenarlık */
+}
+
+.table th {
+    background-color: #f2f2f2;
+    /* Arkaplan rengi */
+}
+
+/* Toplam alanı için stil ayarları */
+.total {
+    background-color: #f2f2f2;
+    /* Arkaplan rengi */
+    padding: 10px;
+    /* İç boşluk ayarlandı */
+    text-align: center;
+    /* Metin hizalaması */
+    position: fixed;
+    /* Sabit pozisyon */
+    bottom: 0;
+    /* Alt kenardan 0 uzaklıkta */
+    width: 100%;
+    /* Genişlik %100 */
+}
+
+.total p {
+    margin: 5px 0;
+    /* Dış boşluk ayarlandı */
+}

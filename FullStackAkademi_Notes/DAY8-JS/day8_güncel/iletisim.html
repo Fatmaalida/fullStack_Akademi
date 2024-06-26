@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- UTF-8 karakter seti -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mobil cihazlar için viewport ayarı -->
+    <title>Document</title>
+    <!-- Sayfa başlığı -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Harici CSS dosyası bağlantısı -->
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="col2">
+          <a href="index.html">
+            <img src="logo.png" alt="logo" class="logo" />
+            <!-- Logo görüntüsü -->
+          </a>
+        </div>
+        <div class="col10">
+          <nav class="nav">
+            <div class="nav__item">
+              <a href="index.html" class="nav__link">Anasayfa</a>
+              <!-- Anasayfa linki -->
+            </div>
+            <div class="nav__item">
+              <a href="urundetay.html" class="nav__link">Ürün Detay</a>
+              <!-- Ürün detayı linki -->
+            </div>
+            <div class="nav__item">
+              <a href="sepet.html" class="nav__link">Sepet</a>
+              <!-- Sepet linki -->
+            </div>
+            <div class="nav__item">
+              <a href="hakkimizda.html" class="nav__link">Hakkımızda</a>
+              <!-- Hakkımızda linki -->
+            </div>
+            <div class="nav__item">
+              <a href="iletisim.html" class="nav__link">İletişim</a>
+              <!-- İletişim linki -->
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="main">
+        <div class="address">
+          <h2 class="address_title">Adres ve Telefon Bilgilerimiz</h2>
+          <!-- Adres başlığı -->
+          <p class="address_address">İstinye / İstanbul</p>
+          <!-- Adres bilgisi -->
+          <p class="address_phone">0555 555 55 55</p>
+          <!-- Telefon numarası -->
+        </div>
+        <div class="form">
+          <h2 class="form_title">Bize Ulaşın!!!</h2>
+          <!-- Form başlığı -->
+          <form action="index.html" method="get">
+            <!-- Form -->
+            <input
+              type="text"
+              name="name_surname"
+              class="name"
+              placeholder="Adınız Soyadınız"
+            /><!-- Ad ve soyad inputu -->
+            <input
+              type="phone"
+              name="phone"
+              class="phone"
+              placeholder="Telefon Numaranız"
+            /><!-- Telefon numarası inputu -->
+            <input
+              type="text"
+              name="subject"
+              class="subject"
+              placeholder="Konu"
+            />
+            <!-- Konu inputu -->
+            <textarea
+              name="message"
+              class="message"
+              placeholder="Mesajınız"
+            ></textarea>
+            <!-- Mesaj alanı -->
+            <button type="submit" class="btn-submit">Gönder</button>
+            <!-- Form gönderme butonu -->
+          </form>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.0000000000005!2d29.034000000000006!3d41.10699999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabf1b1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!2sIstinye%2C%20Sariyer%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1619780000000!5m2!1str!2str"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <!-- Google Maps iframe entegrasyonu -->
+      </div>
+      <footer class="footer">
+        <div class="col4">
+          <a href="index.html" class="footer_logo_link">
+            <img src="logo.png" alt="logo" class="footer_logo" />
+            <!-- Footer logo görüntüsü -->
+          </a>
+        </div>
+        <div class="col8">
+          <div class="footer_nav">
+            <div class="footer_nav_item">
+              <div class="footer_nav_title">
+                <a href="index.html" class="footer_nav_link">Anasayfa</a>
+                <!-- Footer navigasyon linki -->
+              </div>
+              <div class="footer_nav_title">
+                <a href="urundetay.html" class="footer_nav_link">Ürün Detay</a>
+                <!-- Footer navigasyon linki -->
+              </div>
+              <div class="footer_nav_title">
+                <a href="sepet.html" class="footer_nav_link">Sepet</a>
+                <!-- Footer navigasyon linki -->
+              </div>
+              <div class="footer_nav_title">
+                <a href="hakkimizda.html" class="footer_nav_link">Hakkımızda</a>
+                <!-- Footer navigasyon linki -->
+              </div>
+              <div class="footer_nav_title">
+                <a href="iletisim.html" class="footer_nav_link">İletişim</a>
+                <!-- Footer navigasyon linki -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <!-- Harici JavaScript dosyası bağlantısı -->
+  </body>
+</html>

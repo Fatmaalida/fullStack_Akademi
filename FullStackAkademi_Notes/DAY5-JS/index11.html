@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // girdiğimiz elementi almak için value içine gşrilen deger =value
+        // sadece sayı kabul eden parseınt
+
+
+        function sum(){
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var result = parseInt(number1) + parseInt(number2);
+            document.getElementById("result").innerHTML = result;
+            alert("sonuç: " + result);
+        }
+        function sub(){
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var result = parseInt(number1) - parseInt(number2);
+            document.getElementById("result").innerHTML = result;
+            alert("sonuç: " + result);
+        }
+
+        function mul(){
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var result = parseInt(number1) * parseInt(number2);
+            document.getElementById("result").innerHTML = result;
+            alert("sonuç: " + result);
+        }
+        function div(){
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var result = parseInt(number1) / parseInt(number2);
+            document.getElementById("result").innerHTML = result;
+            alert("sonuç: " + result);
+        }
+
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <label for="number1">1.sayıyı giriniz</label> <br>
+        <input type="text" id="number1"> <br>
+
+        <label for="number2">2.sayıyı giriniz</label> <br>
+        <input type="text" id="number2"> <br>
+
+        <button type="button" onclick="sum()">Topla</button><br>
+        <button type="button" onclick="sub()">Fark</button><br>
+        <button type="button" onclick="mul()">Çarp</button><br>
+        <button type="button" onclick="div()">Böl</button><br>
+
+        <p id="result"></p>
+        
+
+    </div>
+    
+</body>
+</html>

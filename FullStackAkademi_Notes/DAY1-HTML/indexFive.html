@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Puan Durumu</h1>
+
+    <table border="1"> 
+        <tr>
+            <th>Students</th>  <!---- th : header ---->
+            <th>Math</th>
+            <th>Science</th>
+            <th>Philosophy</th>
+            <th>History</th>
+        </tr>
+        <tr>
+            <th>Jessica</th>
+            <th>90</th>
+            <th>85</th>
+            <th>20</th>
+            <th>10</th>
+        </tr>
+
+        <tr>
+            <th>Jess</th>
+            <th>100</th>
+            <th>85</th>
+            <th>80</th>
+            <th>40</th>
+        </tr>
+
+    </table>
+
+    <br><br>
+
+    <table border="2">
+        <tr>
+            <th>Students</th>  <!---- th : header ---->
+            <th>Math</th>
+            <th>Science</th>
+            <th>Philosophy</th>
+            <th>History</th>
+        </tr>
+        <tr>
+            <th>Jessica</th>
+            <td>90</td>
+            <td>85</td>
+            <td>20</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <th>Jess</th>
+            <td>100</td>
+            <td>85</td>
+            <td>80</td>
+            <td>40</td>
+        </tr>
+
+        <tfoot>
+            <tr>
+              <th scope="row" colspan="1">Average age</th>
+              <td>88</td>
+              <td>86</td>
+              <td>124</td>
+              <td>33</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <BR></BR>
+
+    <table border="3">
+        <thead>
+            <tr>
+                <th>TAKIM</th>
+                <th>O</th>
+                <th>G</th>
+                <th>B</th>
+                <th>M</th>
+                <th>A</th>
+                <th>Y</th>
+                <th>AV</th>
+                <th>P</th>
+                
+            </tr>
+
+            <tr>
+                <th>Fenerbahçe</th>
+                <td>7</td>
+                <td>42</td>
+                <td>5</td>
+                <td>6</td>
+                <td>10</td>
+                <td>9</td>
+                <td>6</td>
+                <td>14</td>
+            </tr>
+
+            <tr>
+                <th>Galatasaray</th>
+                <td>5</td>
+                <td>2</td>
+                <td>15</td>
+                <td>8</td>
+                <td>14</td>
+                <td>9</td>
+                <td>68</td>
+                <td>6</td>
+            </tr>
+
+            <tr>
+                <th>Beşiktaş</th>
+                <td>54</td>
+                <td>42</td>
+                <td>7</td>
+                <td>6</td>
+                <td>14</td>
+                <td>9</td>
+                <td>61</td>
+                <td>4</td>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+              <th scope="row" colspan="8">Average age</th>
+              <td>88</td>
+            
+            </tr>
+        </tfoot>
+
+    </table>
+
+ <!------rowspan vs colspan hücreleri birleştirir ----->
+    <br><br>
+
+    <h1>Tablo Tüm Özellikleri</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Link</th>
+                <th>Resim</th>
+                <th>Metin</th>
+                <th>İtalik yazı</th>
+                <th>Kalın yazı</th>
+                <th>alt çizgili</th>
+                <th>üst çizgili</th>
+                <th>sup yazı</th>
+                <th>sub yazı</th>
+                <th>hücre birleştirme</th>
+                <th>kod yazı</th>
+                <th>Liste ul li</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.google.com">GOOGLE</a></td>
+                <td>
+                    <a href="https://www.google.com" target="_blank">
+                        <img src="tobias.jpg" alt="" width="100px" height="100px">
+                    </a>
+                </td>
+                <td><p>hi google</p></td>
+                <td><p><i>hi google</i></p></td>
+                <td><p><b>hi google</b></p></td>
+                <td><p><u>hi google</u></p></td>
+                <td><p><s>hi google</s></p></td>
+                <td><p>hi<sup>google</sup></p></td>
+                <td><p>hi<sub>google</sub></p></td>
+                <td rowspan="2">hi google</td>
+                <td><samp>hi google</samp></td>
+                <td>
+                    <ul>
+                        <li>Hi</li>
+                        <li>Google</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.google.com">GOOGLE</a></td>
+                <td>
+                    <a href="https://www.google.com" target="_blank">
+                        <img src="tobias.jpg" alt="" width="100px" height="100px">
+                    </a>
+                </td>
+                <td><p>hi google</p></td>
+                <td><p><i>hi google</i></p></td>
+                <td><p><b>hi google</b></p></td>
+                <td><p><u>hi google</u></p></td>
+                <td><p><s>hi google</s></p></td>
+                <td><p>hi<sup>google</sup></p></td>
+                <td><p>hi<sub>google</sub></p></td>
+                <td><samp>hi google</samp></td>
+                <td>
+                    <ul>
+                        <li>Hi</li>
+                        <li>Google</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+
+    
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+    main div
+    navbar->logo, navlinks->search
+    sidebar->categories, tags
+    content->posts
+    footer->social media links
+    -->
+    <div class="container">
+      <header class="header">
+        <div class="col2">
+          <img src="logo.png" alt="logo" class="logo" />
+        </div>
+        <div class="col5">  
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Anasayfa</a>
+              </li>
+              <li class="nav__item">
+                <a href="hakkimizda.html"" class="nav__link">Hakkımızda</a>
+              </li>
+              <li class="nav__item">
+                <a href="hizmetlerimiz.html" class="nav__link">Hizmetlerimiz</a>
+              </li>
+              <li class="nav__item">
+                <a href="iletisim.html" class="nav__link">İletişim</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col5"> 
+            <input type="text" class="search" placeholder="Search" id="search" oninput="searchFunction()" />
+        </div>
+      </header>
+      <div class="main">
+        <!-- banner-->
+        <div class="col12 banner">
+          <img
+            src="https://picsum.photos/1200/300?grayscale"
+            alt="banner"
+            class="banner"
+          />
+        </div>
+        <div class="sidebar">
+          <div class="categories">
+            <h2 class="categories__title">Kategoriler</h2>
+            <ul class="categories__list">
+              <li class="categories__item">
+                <a href="#" class="categories__link">Kategori 1</a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">Kategori 2</a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">Kategori 3</a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">Kategori 4</a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">Kategori 5</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tags">
+            <h2 class="tags__title">Etiketler</h2>
+            <ul class="tags_list">
+              <li class="tags_item">Mazagin</li>
+              <li class="tags_item">RTE</li>
+              <li class="tags_item">Serdar Ortaç</li>
+              <li class="tags_item">Kodusta</li>
+              <li class="tags_item">Kodluyoruz</li>
+            </ul>
+          </div>
+        </div>
+        <div class="content">
+          <div class="col4 content-item">  
+            <div class="post">
+              <img
+                src="https://picsum.photos/200/300?grayscale"
+                alt="post"
+                class="post__img"
+              />
+              <h3 class="post__title">Flaş Haber</h3>
+              <p class="post__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quo pariatur, eveniet error sed repellendus
+                aspernatur molestias dicta praesentium alias. Recusandae
+                reprehenderit deleniti nulla ratione voluptatem laudantium omnis
+                optio labore?
+              </p>
+              <!-- paylaş button-->
+              <a href="#" class="share_href">Paylaş</a>
+              <!-- yorum yap button-->
+              <button type="button" class="comment_button">Yorum Yap</button>
+            </div>
+          </div>
+          <div class="col4 content-item"> 
+            <div class="post">
+              <img
+                src="https://picsum.photos/200/300?grayscale"
+                alt="post"
+                class="post__img"
+              />
+              <h3 class="post__title">Flaş Haber</h3>
+              <p class="post__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quo pariatur, eveniet error sed repellendus
+                aspernatur molestias dicta praesentium alias. Recusandae
+                reprehenderit deleniti nulla ratione voluptatem laudantium omnis
+                optio labore?
+              </p>
+              <!-- paylaş button-->
+              <a href="#" class="share_href">Paylaş</a>
+              <!-- yorum yap button-->
+              <button type="button" class="comment_button">Yorum Yap</button>
+            </div>
+          </div>
+          <div class="col4 content-item"> 
+            <div class="post">
+              <img
+                src="https://picsum.photos/200/300?grayscale"
+                alt="post"
+                class="post__img"
+              />
+              <h3 class="post__title">Flaş Haber</h3>
+              <p class="post__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quo pariatur, eveniet error sed repellendus
+                aspernatur molestias dicta praesentium alias. Recusandae
+                reprehenderit deleniti nulla ratione voluptatem laudantium omnis
+                optio labore?
+              </p>
+              <!-- paylaş button-->
+              <a href="#" class="share_href">Paylaş</a>
+              <!-- yorum yap button-->
+              <button type="button" class="comment_button">Yorum Yap</button>
+            </div>
+          </div>
+          <div class="col4 content-item"> 
+            <div class="post">
+              <img
+                src="https://picsum.photos/200/300?grayscale"
+                alt="post"
+                class="post__img"
+              />
+              <h3 class="post__title">Flaş Haber</h3>
+              <p class="post__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quo pariatur, eveniet error sed repellendus
+                aspernatur molestias dicta praesentium alias. Recusandae
+                reprehenderit deleniti nulla ratione voluptatem laudantium omnis
+                optio labore?
+              </p>
+              <!-- paylaş button-->
+              <a href="#" class="share_href">Paylaş</a>
+              <!-- yorum yap button-->
+              <button type="button" class="comment_button">Yorum Yap</button>
+            </div>
+          </div>
+          <div class="col4 content-item"> 
+            <div class="post">
+              <img
+                src="https://picsum.photos/200/300?grayscale"
+                alt="post"
+                class="post__img"
+              />
+              <h3 class="post__title">Flaş Haber</h3>
+              <p class="post__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quo pariatur, eveniet error sed repellendus
+                aspernatur molestias dicta praesentium alias. Recusandae
+                reprehenderit deleniti nulla ratione voluptatem laudantium omnis
+                optio labore?
+              </p>
+              <!-- paylaş button-->
+              <a href="#" class="share_href">Paylaş</a>
+              <!-- yorum yap button-->
+              <button type="button" class="comment_button">Yorum Yap</button>
+            </div>
+          </div>
+          <div class="col4 content-item"> 
+            <div class="post">
+              <img
+                src="https://picsum.photos/200/300?grayscale"
+                alt="post"
+                class="post__img"
+              />
+              <h3 class="post__title">Flaş Haber</h3>
+              <p class="post__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quo pariatur, eveniet error sed repellendus
+                aspernatur molestias dicta praesentium alias. Recusandae
+                reprehenderit deleniti nulla ratione voluptatem laudantium omnis
+                optio labore?
+              </p>
+              <!-- paylaş button-->
+              <a href="#" class="share_href">Paylaş</a>
+              <!-- yorum yap button-->
+              <button type="button" class="comment_button">Yorum Yap</button>
+            </div>
+          </div>
+          <div id="none" style="display: none">
+            <div class="col4">
+              <div class="post">
+                <img
+                  src="https://picsum.photos/200/300?grayscale"
+                  alt="post"
+                  class="post__img"
+                />
+                <h3 class="post__title">Flaş Haber</h3>
+                <p class="post__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quo pariatur, eveniet error sed repellendus
+                  aspernatur molestias dicta praesentium alias. Recusandae
+                  reprehenderit deleniti nulla ratione voluptatem laudantium
+                  omnis optio labore?
+                </p>
+                <!-- paylaş button-->
+                <a href="#" class="share_href">Paylaş</a>
+                <!-- yorum yap button-->
+                <button type="button" class="comment_button">Yorum Yap</button>
+              </div>
+            </div>
+            <div class="col4">
+              <div class="post">
+                <img
+                  src="https://picsum.photos/200/300?grayscale"
+                  alt="post"
+                  class="post__img"
+                />
+                <h3 class="post__title">Flaş Haber</h3>
+                <p class="post__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quo pariatur, eveniet error sed repellendus
+                  aspernatur molestias dicta praesentium alias. Recusandae
+                  reprehenderit deleniti nulla ratione voluptatem laudantium
+                  omnis optio labore?
+                </p>
+                <!-- paylaş button-->
+                <a href="#" class="share_href">Paylaş</a>
+                <!-- yorum yap button-->
+                <button type="button" class="comment_button">Yorum Yap</button>
+              </div>
+            </div>
+            <div class="col4">
+              <div class="post">
+                <img
+                  src="https://picsum.photos/200/300?grayscale"
+                  alt="post"
+                  class="post__img"
+                />
+                <h3 class="post__title">Flaş Haber</h3>
+                <p class="post__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quo pariatur, eveniet error sed repellendus
+                  aspernatur molestias dicta praesentium alias. Recusandae
+                  reprehenderit deleniti nulla ratione voluptatem laudantium
+                  omnis optio labore?
+                </p>
+                <!-- paylaş button-->
+                <a href="#" class="share_href">Paylaş</a>
+                <a
+                  href="https://www.linkedin.com/shareArticle?url=file:///Users/selahaddinciftci/Desktop/ders/index3.html#&title=Flaş Haber"
+                  class="linkedin"
+                  target="_blank"
+                  >LinkedIn'de Paylaş</a
+                >
+                <!-- yorum yap button-->
+                <button type="button" class="comment_button">Yorum Yap</button>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="loadmore"
+            onclick="loadMore1()"
+            style="display: none"
+            id="load1"
+          >
+            Daha Az Göster
+          </button>
+          <button type="button" class="loadmore" onclick="loadMore()" id="load">
+            Daha Fazla Göster
+          </button>
+        </div>
+      </div>
+      <footer class="footer">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link">Bahance</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">Github</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">Stackoverflow</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">Linkedin</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script>
+
+     //-------------------------header-search sitede arama yapma------------------------>
+        /*  function searchFunction() {
+            const query = document.getElementById('search').value.toLowerCase();
+            
+            const contentItems = document.querySelectorAll('.content-item');
+        
+            contentItems.forEach(item => {
+              if (item.textContent.toLowerCase().includes(query)) {
+                item.classList.remove('hidden');
+              } else {
+                item.classList.add('hidden');
+              }
+            });
+          } */
+
+          // onchange yerine oninput olayını kullandım, çünkü oninput olayı, her karakter girildiğinde veya silindiğinde tetiklenir. -->
+
+          function searchFunction() {
+            const query = document.getElementById('search').value.toLowerCase();
+            console.log("Search query:", query);
+        
+            const contentItems = document.querySelectorAll('.content-item');
+            console.log("Total content items:", contentItems.length);
+        
+            contentItems.forEach(item => {
+                if (item.textContent.toLowerCase().includes(query)) {
+                    item.classList.remove('hidden');
+                    console.log("Item shown:", item);
+                } else {
+                    item.classList.add('hidden');
+                    console.log("Item hidden:", item);
+                }
+            });
+        }
+        //--------------------------------------------------------------------------------->
+      function loadMore() {
+        document.getElementById("none").style.display = "block";
+        document.getElementById("load").style.display = "none";
+        document.getElementById("load1").style.display = "block";
+      }
+      function loadMore1() {
+        document.getElementById("none").style.display = "none";
+        document.getElementById("load").style.display = "block";
+        document.getElementById("load1").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
