@@ -203,3 +203,49 @@ body{
 a{
     text-decoration: none;
 }
+
+
+/*---------------- modal------------------- */
+
+.custom-modal .modal-content {
+    background-color: #333;
+    color: white;
+}
+.custom-modal .modal-header, 
+.custom-modal .modal-body, 
+.custom-modal .modal-footer {
+    border: none;
+}
+.custom-modal .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.custom-modal .modal-header h5 {
+    margin: 0;
+}
+.custom-modal .close {
+    color: white;
+    opacity: 1;
+}
+.custom-modal .modal-body {
+    padding: 1rem;
+}
+.custom-modal .list-group-item {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+.custom-modal .list-group-item:hover {
+    background-color: #444;
+}
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.icon-button:focus {
+    outline: none;
+}
