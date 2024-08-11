@@ -1,0 +1,262 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "productName": "Dune Poster 1",
+      "image": "images/Dune1.jpg",
+      "desc": "Dune filminden etkilenmiş, yüksek kaliteli bir poster."
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "productName": "Dune Poster 2",
+      "image": "images/Dune2.jpg",
+      "desc": "Dune temalı, sinematik bir görsel sunan poster."
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "productName": "Dune Poster 3",
+      "image": "images/Dune3.jpg",
+      "desc": "Dune filmine özgü ayrıntılı bir sanat eseri posteri."
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "productName": "Dune Poster 4",
+      "image": "images/Dune4.jpg",
+      "desc": "Dune evreninden ilham alarak tasarlanmış bir poster."
+    },
+    {
+      "id": 5,
+      "categoryId": 2,
+      "productName": "Foundation Poster 1",
+      "image": "images/Foundation1.jpg",
+      "desc": "Foundation serisinden ilham alınarak hazırlanan poster."
+    },
+    {
+      "id": 6,
+      "categoryId": 2,
+      "productName": "Foundation Poster 2",
+      "image": "images/Foundation2.jpg",
+      "desc": "Foundation evrenine ait özel bir sanat eseri posteri."
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "productName": "Foundation Poster 3",
+      "image": "images/Foundation3.jpg",
+      "desc": "Foundation serisinden etkilenmiş yüksek kaliteli bir poster."
+    },
+    {
+      "id": 8,
+      "categoryId": 2,
+      "productName": "Foundation Poster 4",
+      "image": "images/Foundation4.jpg",
+      "desc": "Foundation temalı detaylı bir görsel sunan poster."
+    },
+    {
+      "id": 9,
+      "categoryId": 3,
+      "productName": "Hobbit Poster 1",
+      "image": "images/Hobbit1.jpg",
+      "desc": "Hobbit filminden esinlenmiş, yüksek kaliteli bir poster."
+    },
+    {
+      "id": 10,
+      "categoryId": 3,
+      "productName": "Hobbit Poster 2",
+      "image": "images/Hobbit2.jpg",
+      "desc": "Hobbit temalı, sinematik bir görsel sunan poster."
+    },
+    {
+      "id": 11,
+      "categoryId": 3,
+      "productName": "Hobbit Poster 3",
+      "image": "images/Hobbit3.jpg",
+      "desc": "Hobbit filmine özgü ayrıntılı bir sanat eseri posteri."
+    },
+    {
+      "id": 12,
+      "categoryId": 3,
+      "productName": "Hobbit Poster 4",
+      "image": "images/Hobbit4.jpg",
+      "desc": "Hobbit evreninden ilham alarak tasarlanmış bir poster."
+    },
+    {
+      "id": 13,
+      "categoryId": 4,
+      "productName": "Megan Poster 1",
+      "image": "images/Megan1.jpg",
+      "desc": "Megan filminden etkilenmiş yüksek kaliteli bir poster."
+    },
+    {
+      "id": 14,
+      "categoryId": 4,
+      "productName": "Megan Poster 2",
+      "image": "images/Megan2.jpg",
+      "desc": "Megan temalı, sinematik bir görsel sunan poster."
+    },
+    {
+      "id": 15,
+      "categoryId": 4,
+      "productName": "Megan Poster 3",
+      "image": "images/Megan3.jpg",
+      "desc": "Megan filmine özgü ayrıntılı bir sanat eseri posteri."
+    },
+    {
+      "id": 16,
+      "categoryId": 4,
+      "productName": "Megan Poster 4",
+      "image": "images/Megan4.jpg",
+      "desc": "Megan evreninden ilham alarak tasarlanmış bir poster."
+    },
+    {
+      "id": 17,
+      "categoryId": 5,
+      "productName": "Spectral Poster 1",
+      "image": "images/Spectral1.jpg",
+      "desc": "Spectral filminden etkilenmiş yüksek kaliteli bir poster."
+    },
+    {
+      "id": 18,
+      "categoryId": 5,
+      "productName": "Spectral Poster 2",
+      "image": "images/Spectral2.jpg",
+      "desc": "Spectral temalı, sinematik bir görsel sunan poster."
+    },
+    {
+      "id": 19,
+      "categoryId": 5,
+      "productName": "Spectral Poster 3",
+      "image": "images/Spectral3.jpg",
+      "desc": "Spectral filmine özgü ayrıntılı bir sanat eseri posteri."
+    },
+    {
+      "id": 20,
+      "categoryId": 5,
+      "productName": "Spectral Poster 4",
+      "image": "images/Spectral4.jpg",
+      "desc": "Spectral evreninden ilham alarak tasarlanmış bir poster."
+    },
+    {
+      "id": 21,
+      "categoryId": 6,
+      "productName": "Ghostshell Poster 1",
+      "image": "images/Ghostshell1.jpg",
+      "desc": "Ghostshell filminden etkilenmiş yüksek kaliteli bir poster."
+    },
+    {
+      "id": 22,
+      "categoryId": 6,
+      "productName": "Ghostshell Poster 2",
+      "image": "images/Ghostshell2.jpg",
+      "desc": "Ghostshell temalı, sinematik bir görsel sunan poster."
+    },
+    {
+      "id": 23,
+      "categoryId": 6,
+      "productName": "Ghostshell Poster 3",
+      "image": "images/Ghostshell3.jpg",
+      "desc": "Ghostshell filmine özgü ayrıntılı bir sanat eseri posteri."
+    },
+    {
+      "id": 24,
+      "categoryId": 6,
+      "productName": "Ghostshell Poster 4",
+      "image": "images/Ghostshell4.jpg",
+      "desc": "Ghostshell evreninden ilham alarak tasarlanmış bir poster."
+    },
+    {
+      "id": 25,
+      "categoryId": 7,
+      "productName": "Bloodshot Poster 1",
+      "image": "images/Bloodshot1.jpg",
+      "desc": "Bloodshot filminden etkilenmiş yüksek kaliteli bir poster."
+    },
+    {
+      "id": 26,
+      "categoryId": 7,
+      "productName": "Bloodshot Poster 2",
+      "image": "images/Bloodshot2.jpg",
+      "desc": "Bloodshot temalı, sinematik bir görsel sunan poster."
+    },
+    {
+      "id": 27,
+      "categoryId": 7,
+      "productName": "Bloodshot Poster 3",
+      "image": "images/Bloodshot3.jpg",
+      "desc": "Bloodshot filmine özgü ayrıntılı bir sanat eseri posteri."
+    },
+    {
+      "id": 28,
+      "categoryId": 7,
+      "productName": "Bloodshot Poster 4",
+      "image": "images/Bloodshot4.jpg",
+      "desc": "Bloodshot evreninden ilham alarak tasarlanmış bir poster."
+    },
+    {
+      "id": 29,
+      "categoryId": 8,
+      "productName": "Chappie Poster 1",
+      "image": "images/Chappie1.jpg",
+      "desc": "Chappie filminden etkilenmiş yüksek kaliteli bir poster."
+    },
+    {
+      "id": 30,
+      "categoryId": 8,
+      "productName": "Chappie Poster 2",
+      "image": "images/Chappie2.jpg",
+      "desc": "Chappie temalı, sinematik bir görsel sunan poster."
+    },
+    {
+      "id": 31,
+      "categoryId": 8,
+      "productName": "Chappie Poster 3",
+      "image": "images/Chappie3.jpg",
+      "desc": "Chappie filmine özgü ayrıntılı bir sanat eseri posteri."
+    },
+    {
+      "id": 32,
+      "categoryId": 8,
+      "productName": "Chappie Poster 4",
+      "image": "images/Chappie4.jpg",
+      "desc": "Chappie evreninden ilham alarak tasarlanmış bir poster."
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Dune"
+    },
+    {
+      "id": 2,
+      "categoryName": "Foundation"
+    },
+    {
+      "id": 3,
+      "categoryName": "Hobbit"
+    },
+    {
+      "id": 4,
+      "categoryName": "Megan"
+    },
+    {
+      "id": 5,
+      "categoryName": "Spectral"
+    },
+    {
+      "id": 6,
+      "categoryName": "Ghostshell"
+    },
+    {
+      "id": 7,
+      "categoryName": "Bloodshot"
+    },
+    {
+      "id": 8,
+      "categoryName": "Chappie"
+    }
+  ]
+}
