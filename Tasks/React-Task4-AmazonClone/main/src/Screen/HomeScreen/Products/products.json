@@ -1,0 +1,39 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "2022 Apple MacBook Pro Laptop with M2 chip: 13-inch Retina Display, 8GB RAM, 512GB ​​​​​​​SSD ​​​​​​​Storage, Touch Bar, Backlit Keyboard, FaceTime HD Camera. Works with iPhone and iPad; Silver",
+            "price": 149900,
+            "quantity": 1,
+            "imageUrl": "https://m.media-amazon.com/images/I/61bX2AoGj2L._AC_UY327_FMwebp_QL65_.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Lenovo 2022 Newest Ideapad 3 Laptop, 15.6 HD Touchscreen, 11th Gen Intel Core i3-1115G4 Processor, 8GB DDR4 RAM, 256GB PCIe NVMe SSD, HDMI, Webcam, Wi-Fi 5, Bluetooth, Windows 11 Home, Almond",
+            "price": 1299,
+            "quantity": 1,
+            "imageUrl": "https://m.media-amazon.com/images/I/61QGMX0Qy6L._AC_UY327_FMwebp_QL65_.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Motorola razr | 2023 | Unlocked | Made for US 8/128 | 32MP Camera | Cherry Blossom, 73.95 x 170.82 x 7.35mm",
+            "price": 999,
+            "quantity": 1,
+            "imageUrl": "https://m.media-amazon.com/images/I/61u-OaDSfQL._AC_UY327_FMwebp_QL65_.jpg"
+        },
+        {
+            "id": "4",
+            "name": "iPhone 121 in Ear TWS Earbuds with Beast Mode (40ms Low Latency) for Gaming, 40H Playtime, Blazing LEDs, Quad Mics ENx Signature Sound",
+            "price": 799,
+            "quantity": 1,
+            "imageUrl": "https://m.media-amazon.com/images/I/514YogjIWpL._AC_UY327_FMwebp_QL65_.jpg"
+        },
+        {
+            "id": "5",
+            "name": "Apple iPhone 13 Pro Max, 128GB, Alpine Green - Verizon (Renewed Premium)",
+            "price": 24999,
+            "quantity": 1,
+            "imageUrl": "https://m.media-amazon.com/images/I/611ovP2GkrL._AC_UY327_FMwebp_QL65_.jpg"
+        }
+    ]
+}
