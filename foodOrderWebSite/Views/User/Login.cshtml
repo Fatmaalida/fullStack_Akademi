@@ -1,0 +1,45 @@
+﻿@model ff.Models.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "LoginIn";
+}
+
+<div class="container">
+    <div class="row shadow rounded">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div>
+                <img src="~/images/loginImages/loginPageImg1.jpg" class="w-100"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <form autocomplete="off" method="post" class="m-3 p-3" asp-action="login" asp-controller="User">
+                <div class="mb-3">
+                    <h2 class="text-pink fst-italic">LogIn</h2>
+                    <span class="fst-italic text-muted">Login into your account</span>
+                </div>
+
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "Username" })
+                    <label for="UserName">UserName</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.Password, new { @class = "form-control", placeholder = "Password", type = "password" })
+                    <label for="Password">Password</label>
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-sm btn-dark w-100 p-2 shadow rounded" type="submit">LogIn</button>
+                </div>
+
+                <div class="mb-3">
+                    <span>Don't have an account ?  </span><a asp-controller="user" asp-action="Register" class="text-decoration-none text-dark"> Register here</a>
+                </div>
+                <p>@ViewData["Message"]</p>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>

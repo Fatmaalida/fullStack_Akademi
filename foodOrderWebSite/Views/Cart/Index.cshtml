@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ff.Models.Cart>
+
+@{
+    ViewData["Title"] = "Cart";
+}
+
+<div class="container mt-4">
+    <h2>Your Cart</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><img src="/images/foodImages/pizza3.jpg" class="img-thumbnail" style="width: 50px; height: 50px;" /></td>
+                    <td>@item.Title</td>
+                    <td>@item.Description</td>
+                    <td>@item.Price</td>
+                    <td>@item.Quantity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

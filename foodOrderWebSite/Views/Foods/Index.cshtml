@@ -1,0 +1,39 @@
+﻿@model IDViewModel
+
+@{
+    ViewData["Title"] = "Foods";
+    var restoranId = Model.RestaurantID;
+    var kategoriID = Model.CategoryID;
+}
+
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col-12">
+            @Html.Partial("_SearchBar")
+        </div>
+    </div>
+
+    <!-- Side menu -->
+    <div class="row">
+        <div class="col-2">
+            <div class="shadow rounded position-sticky" id="recipe-list">
+                <div class="border-bottom border-3 p-2">
+                    <h4 class="text-pink text-center fst-italic">Categories</h4>
+                    @Html.Partial("_SideMenu")
+                </div>
+            </div>
+        </div>
+
+        <!-- Foods -->
+        <div class="col-10">
+            <div class="mb-3">
+                <h4 class="text-dark">Foods</h4>
+                <div class="row" id="foodItems">
+                    @Html.Partial("CategoryFoods", Model.Foods)
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

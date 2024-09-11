@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ff.Models.FoodItem>
+
+@if (Model != null && Model.Any())
+{
+    @foreach (var food in Model)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card">
+
+                <img src="/images/foodImages/pizza1.jpg" class="w-80" id="order-img" />
+                <div class="card-body">
+                    <h5 class="card-title">@food.Name</h5>
+                    <p class="card-text">@food.Description</p>
+                    <p class="card-text"><strong>Price:</strong> @food.Price</p>
+
+                    <a asp-controller="Foods" asp-action="Order" asp-area="" class="btn btn-sm btn-primary p-2">Order</a>
+
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <p>No food items found.</p>
+}

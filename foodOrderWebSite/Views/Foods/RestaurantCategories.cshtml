@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ff.Models.Category>
+
+@if (Model != null && Model.Any())
+{
+    <ul class="list-group">
+        @foreach (var category in Model)
+        {
+            <li class="list-group-item">
+                <a asp-action="Index" asp-controller="Foods" asp-route-restoranID="@category.RestaurantId" asp-route-kategoriID="@category.Id">
+                    @category.Name
+                </a>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No categories found.</p>
+}

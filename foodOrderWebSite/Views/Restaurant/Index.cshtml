@@ -1,0 +1,36 @@
+﻿@model IEnumerable<ff.Models.Restaurant>
+
+<h2>Restoran Listesi</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>İsim</th>
+                <th>Adres</th>
+                <th>Telefon</th>
+                <th>Şehir</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var restaurant in Model)
+            {
+                <tr>
+                    <td>
+                        <a href="@Url.Action("Index", "Foods", new { restoranID = restaurant.Id })">
+                            @restaurant.Name
+                        </a>
+                    </td>
+                    <td>@restaurant.Address</td>
+                    <td>@restaurant.Phone</td>
+                    <td>@restaurant.CityId</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Restoran bulunamadı.</p>
+}

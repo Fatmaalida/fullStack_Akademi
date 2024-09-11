@@ -1,0 +1,62 @@
+﻿@model ff.Models.ViewModels.RegisterViewModel
+
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container">
+    <div class="row shadow rounded">
+        <div class="col-sm-6 col-md-6  col-lg-6 col-xl-6">
+            <div>
+                <img src="~/images/loginImages/loginPageImg2.jpg" class="w-100 h-100" alt="loginPageImg2"></img>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6  col-lg-6 col-xl-6">
+            <form autocomplete="off" method="post" class="m-3 p-3" asp-controller="user" asp-action="Register">
+                <div class="mb-3">
+                    <h2 class="text-pink fst-italic">Register</h2>
+                    <span class="fst-italic text-muted">Create your account</span>
+                </div>
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "UserName" })
+                    <label for="UserName">UserName</label>
+                </div>
+                @*                 <div class="form-floating mb-3">
+                @Html.TextBoxFor(m => m.City, new { @class = "form-control", placeholder = "City" })
+                <label for="City">City</label>
+                </div> *@
+                @*    <select name="@Model.CityID" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>Select City</option>
+                <option value="1">İstanbul</option>
+                <option value="2">Antalya</option>
+                <option value="3">İzmir</option>
+                </select> *@
+
+                <div class="form-floating mb-3">
+                    @Html.DropDownListFor(m => m.CityId, new SelectList(new[]
+                             {
+                    new { Value = 1, Text = "İstanbul" },
+                    new { Value = 2, Text = "Antalya" },
+                    new { Value = 3, Text = "İzmir" }
+                    }, "Value", "Text"), new { @class = "form-select form-select-sm" })
+                    <label for="CityID">Select City</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email" })
+                    <label for="Email">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.Password, new { @class = "form-control", placeholder = "Password", type = "Password" })
+                    <label for="Password">Password</label>
+                </div>
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-sm w-100 btn-dark p-2">Register</button>
+                </div>
+                <p>@ViewData["RegisterMessage"]</p>
+            </form>
+        </div>
+    </div>
+</div>

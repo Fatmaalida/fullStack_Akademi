@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FoodApplication</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FoodApplication.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="d-flex flex-column min-vh-100">
+        <header class="position-sticky top-0">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-pink fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Food  Application</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-pink fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            @*<li class="nav-item">
+                            <a class="nav-link text-pink fw-bold" asp-area="" asp-controller="Foods" asp-action="Index">Foods</a>
+                            </li> restorana gidince foodlar listelenecek *@
+                            <li class="nav-item">
+                                <a class="nav-link text-pink fw-bold" asp-area="" asp-controller="Restaurant" asp-action="Index">Restaurants</a>
+                            </li>
+                            @*  <li class="nav-item">
+                            <a class="text-pink nav-link fw-bold" asp-area="">Menu</a>
+                            </li> *@
+                        </ul>
+                    </div>
+
+                    @*  <div>
+                    <a class="nav-link fw-bold text-pink" asp-controller="User" asp-action="Login">LogIn</a>
+                    </div> *@
+
+
+
+                    @* sadece ekranda gözükmesi için daha sonra veri çekince  if else yer değişecek , shopping cart logout ta olacak*@
+
+                    @if (User.Identity!.IsAuthenticated)
+                    {
+                        <div class="text-center">
+                            <a class="nav-link fw-bold text-pink" asp-controller="User" asp-action="LogOut">LogOut</a>
+                        </div>
+
+
+                    }
+                    else
+                    {
+                        <div class="d-flex jsutify-content-center align-content-center">
+                            <div>
+
+                                <a class="nav-link fw-bold text-pink" asp-controller="Cart" asp-action="Index"><span><i class="fa-solid fa-cart-shopping text-pink fs-4"></i></span></a>
+
+
+                            </div>
+                            <div>
+                                <a class="nav-link fw-bold text-pink" asp-controller="User" asp-action="Login">LogIn</a>
+
+                            </div>
+
+
+                        </div>
+
+                    }
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class=" text-white  mt-auto p-3">
+            <div class="container mt-2">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <h4>Food Application</h4>
+
+                        <p>Healthy, Save and Fastest :)</p>
+
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <p>Contact Us</p>
+                        <div class="mt-3 mb-2">
+                            <span><i class="fa-brands fa-instagram"></i>  Instagram</span>
+                        </div>
+                        <div class="mb-2">
+                            <span><i class="fa-brands fa-whatsapp"></i>  Whatsapp</span>
+                        </div>
+                        <div class="mb-2">
+                            <span><i class="fa-brands fa-twitter"></i>  Twitter</span>
+                        </div>
+                        <div class="mb-2">
+                            <span><i class="fa-solid fa-envelope"></i>  Gmail</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <h4>Adress</h4>
+                        <pre>Türkiye, İstanbul  Beşiktaş/4.Levent</pre>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-center">Powered By</p>
+                </div>
+
+
+            </div>
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
